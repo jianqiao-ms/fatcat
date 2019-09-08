@@ -1,14 +1,12 @@
-erb-bootstrap-example
-=====================
-An example of [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate) using sass and bootstrap.
+# FatCat
+OpenSource Invoicing System. At least aimed to be.
 
-[![Build Status](https://travis-ci.org/amilajack/erb-bootstrap-example.svg?branch=master&maxAge=2592)](https://travis-ci.org/amilajack/erb-bootstrap-example)
+# How we start
 
-## Setup
-⚠️ These instructions assume that you have yarn. If you don't, make sure to install it: `npm i -g yarn`
+[REF:building-an-electron-application-with-create-react-app](https://www.freecodecamp.org/news/building-an-electron-application-with-create-react-app-97945861647c/)
 
 ```bash
-git clone https://github.com/amilajack/erb-bootstrap-example.git
-yarn
-yarn dev
+$ yarn create react-app fatcat
+$ yarn add electron --dev
+$ yarn add foreman --dev
 ```
