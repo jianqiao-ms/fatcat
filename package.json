@@ -3,17 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "mousetrap": "^1.6.3",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "dev" : "nf start",
+    "react-dev": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test",
     "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
-    "electron-start": "electron ."
+    "electron-start": "electron .",
+    "dev": "nf start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,7 +35,11 @@
   },
   "devDependencies": {
     "electron": "^6.0.7",
-    "foreman": "^3.0.1"
+    "electron-log": "^3.0.7",
+    "eslint-utils": "^1.4.1",
+    "foreman": "^3.0.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0"
   },
   "homepage": "./",
   "main": "main.js"
