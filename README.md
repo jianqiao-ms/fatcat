@@ -8,5 +8,6 @@ OpenSource Invoicing System. At least aimed to be.
 ```bash
 $ yarn create react-app fatcat
 $ yarn add electron --dev
-$ yarn add foreman --dev
+$ yarn add foreman --dev 
+$ yarn add dateformat
 ```

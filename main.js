@@ -13,15 +13,13 @@ function createWindow () {
   // 创建浏览器窗口。
   win = new BrowserWindow({
     show: false,
-    alwaysOnTop:true,
-    // frame: false,
-    // fullscreen:true,
+    // alwaysOnTop:true,
+    frame: false,
+    fullscreen:true,
     webPreferences: {
       nodeIntegration: true
     }
   });
-
-
 
   win.once('ready-to-show', () => {
     win.show()
