@@ -9,7 +9,7 @@ class SalesUI extends React.Component {
     return(
       <div className={"container-fluid bg-dark vh-100 pt-2 pl-4"}>
         <SalesHeader />
-        <SalesBodyBlock />
+        <SalesBodyTable />
       </div>
     )
   }
@@ -90,31 +90,46 @@ class SalesHeaderSecondBlock extends React.Component {
 }
 
 // 中部
-class SalesBodyBlock extends React.Component {
+class SalesBodyTable extends React.Component {
   render() {
     return(
-
-        <div className={"row mt-1 border border-white"}>
-          <div className={"col-12"}>
-            <SalesBodyBlockLine />
-          </div>
+      <div className={"row mt-1"}>
+        <div className={"col-12 pl-0 pr-0"}>
+          <table className={"table pl-0 pr-0"}>
+            <SalesBodyTableHeader />
+          </table>
         </div>
+      </div>
     )
   }
 }
 // 中部普通行元素
-class SalesBodyBlockLine extends React.Component {
+class SalesBodyTableHeader extends React.Component {
   render() {
     return (
-        <div className={"row "}>
-          <div className={"col-auto pl-2 pr-2 bg-light border border-right-dark"}>序号</div>
-          <div className={"col-1 bg-light border border-right-dark"}>条码</div>
-          <div className={"col-xl-3 col-sm-4 bg-light border border-right-dark"}>商品名称</div>
-          <div className={"col-auto pl-3 pr-3 bg-light border border-right-dark"}>单位</div>
-          <div className={"col-auto pl-4 pr-4 bg-light border border-right-dark"}>单价</div>
-          <div className={"col-auto pl-3 pr-3 bg-light border border-right-dark"}>数量</div>
-          <div className={"col-auto pl-4 pr-4 bg-light border border-right-dark"}>金额</div>
-        </div>
+      <thead className={"bg-light"}>
+         <tr>
+            <SalesBodyTableCell value={"序号"}/>
+            <SalesBodyTableCell value={"条码"}/>
+            <SalesBodyTableCell value={"商品名称"}/>
+            <SalesBodyTableCell value={"单位"}/>
+            <SalesBodyTableCell value={"单价"}/>
+            <SalesBodyTableCell value={"数量"}/>
+            <SalesBodyTableCell value={"序号"}/>
+            <SalesBodyTableCell value={"金额"} last={true}/>
+         </tr>
+       </thead>
+    )
+  }
+}
+class SalesBodyTableCell extends React.Component {
+  render() {
+    return(
+      <td className={"pt-1 pb-0 text-center border-dark" +
+          (this.props.last? "" :" border-right ")
+      }>
+        {this.props.value}
+      </td>
     )
   }
 }

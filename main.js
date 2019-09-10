@@ -12,10 +12,12 @@ let win;
 function createWindow () {
   // 创建浏览器窗口。
   win = new BrowserWindow({
+    width:800,
+    height:600,
     show: false,
     // alwaysOnTop:true,
     frame: false,
-    fullscreen:true,
+    // fullscreen:true,
     webPreferences: {
       nodeIntegration: true
     }
