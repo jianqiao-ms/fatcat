@@ -34,7 +34,7 @@
     ]
   },
   "devDependencies": {
-    "electron": "^6.0.7",
+    "electron": "^7.2.4",
     "electron-log": "^3.0.7",
     "eslint-utils": "^1.4.1",
     "foreman": "^3.0.1",
